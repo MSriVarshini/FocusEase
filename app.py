@@ -60,6 +60,32 @@ def get_db_connection():
     )
 
 
+def initialize_database():
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+
+        with open("schema.sql", "r") as file:
+            sql_script = file.read()
+
+        for statement in sql_script.split(";"):
+            statement = statement.strip()
+
+            if statement:
+                cursor.execute(statement)
+
+        conn.commit()
+
+        cursor.close()
+        conn.close()
+
+        print("✅ Database tables initialized successfully!")
+
+    except Exception as e:
+        print("❌ Database initialization error:", e)
+   
+
+
 # --------------------------------------------------
 # WELLNESS IMPACT CALCULATION
 # --------------------------------------------------
@@ -571,6 +597,7 @@ def predict():
 # --------------------------------------------------
 # RUN APPLICATION
 # --------------------------------------------------
+initialize_database()
 
 if __name__ == "__main__":
     app.run(debug=True)
