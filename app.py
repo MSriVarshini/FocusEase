@@ -79,10 +79,10 @@ def initialize_database():
         cursor.close()
         conn.close()
 
-        print("✅ Database tables initialized successfully!")
+        print(" Database tables initialized successfully!")
 
     except Exception as e:
-        print("❌ Database initialization error:", e)
+        print(" Database initialization error:", e)
    
 
 
