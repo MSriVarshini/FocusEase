@@ -383,7 +383,7 @@ df.to_csv(
 )
 
 
-print("\n✅ Dataset created successfully!")
+print("\n Dataset created successfully!")
 
 print(
     "Dataset shape:",
@@ -486,7 +486,7 @@ print("\n")
 
 print("=" * 55)
 
-print("🧠 FOCUSEASE AI MODEL COMPARISON")
+print(" FOCUSEASE AI MODEL COMPARISON")
 
 print("=" * 55)
 
@@ -497,7 +497,7 @@ print("=" * 55)
 
 for name, model in models.items():
 
-    print(f"\n🚀 Training: {name}")
+    print(f"\n Training: {name}")
 
     model.fit(
         X_train,
@@ -582,7 +582,7 @@ print("\n")
 
 print("=" * 55)
 
-print("🏆 FINAL MODEL RESULTS")
+print("FINAL MODEL RESULTS")
 
 print("=" * 55)
 
@@ -592,7 +592,7 @@ print(
 )
 
 
-print("\n🏆 BEST MODEL:", best_model_name)
+print("\n BEST MODEL:", best_model_name)
 
 
 # ==================================================
@@ -629,7 +629,7 @@ if hasattr(
 
     print("=" * 55)
 
-    print("🔥 FEATURE IMPORTANCE")
+    print(" FEATURE IMPORTANCE")
 
     print("=" * 55)
 
@@ -760,23 +760,23 @@ print("\n")
 
 print("=" * 55)
 
-print("🎉 FOCUSEASE AI ML ENGINE TRAINED SUCCESSFULLY!")
+print(" FOCUSEASE AI ML ENGINE TRAINED SUCCESSFULLY!")
 
 print("=" * 55)
 
 print(
     f"""
-🏆 Best Regression Model: {best_model_name}
+ Best Regression Model: {best_model_name}
 
-🌲 Models Compared:
+ Models Compared:
    • Linear Regression
    • Random Forest
    • Gradient Boosting
 
-🔵 Clustering:
+ Clustering:
    • K-Means Productivity Personas
 
-🧠 Features:
+ Features:
    • Lifestyle Signals
    • Productivity Signals
    • Health & Wellness Signals
